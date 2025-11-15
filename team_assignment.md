@@ -2,7 +2,7 @@
 
 | Leader | Assigned Commanders | Assigned Executors |
 |-------|----------------------|---------------------|
-| **Бочкова Полина Алексеевна** | • <Харламова Варвара Михайловна> • <Якухина Елизавета Константиновна> • <br> • | • <br> • <br> • <br> • <br> • |
+| **Бочкова Полина Алексеевна** | • <Харламова Варвара Михайловна> • • <br> • | • <br> • <br> • <br> • <br> • |
 | ** • Адгишева Алтана Саналовна br • Бадьярова Валерия Сергеевна Леванова Екатерина Александровна** |<><br> • Smirnova Irina Pavlovna <br> Kharlamova Varvara Mikhailovna • Geshele Snezhana Igorevna | • Kozarenko Alena-Maria Alexandrovna <br> • Лукьянова Екатерина Сергеевна < br> • Timchenko Anastasia Evgenievna |
 | **Sergei Rashchupkin** | • Хвостова Таисия Алексеевна • Устюгова Мария Дмитриевна • <br> • | • Yelin Lev Vitalyevich < br> • Simkina Anastasia Sergeevna < br> • Anna Ivankovich • Ekaterina Shestakova <br>• Kuklina Polina Andreevna < br> • Ulyana Bogdanova|
 | **Alexander Kopyrin** | • Баландина Варвара Андреевна <br> • Людкевич Александра Сергеевна | • Волкова Лада Дмитриевна <brbr • Ким Дианна Декчеровна > • Zharkova Maria Petrovna <>< br> • Kuban Bogdan Yanovich  • Ekaterina Kuzminova br<br><> • Тушова Светлана Дмитриевна  <br> • Шустова София Константиновна |
