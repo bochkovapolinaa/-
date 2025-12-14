@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+
+\begin{document}
+
+\section*{Задание: Найти сумму и разность матриц \(A\) и \(B\).}
+
+Для нахождения суммы двух матриц необходимо, чтобы число строк и столбцов у обеих матриц совпадало. Сумма получается почленным сложением соответствующих элементов, а разность — почленным вычитанием.
+
+\[
+A = \begin{pmatrix}
+1 & 4 & 6 \\
+15 & -12 & 3
+\end{pmatrix},
+\quad
+B = \begin{pmatrix}
+5 & -6 & 11 \\
+-23 & 51 & 35
+\end{pmatrix}
+\]
+
+\[
+A + B = 
+\begin{pmatrix}
+1+5 & 4+(-6) & 6+11 \\
+15+(-23) & -12+51 & 3+35
+\end{pmatrix}
+=
+\begin{pmatrix}
+6 & -2 & 17 \\
+-8 & 39 & 38
+\end{pmatrix}
+\]
+
+\[
+A - B = 
+\begin{pmatrix}
+1-5 & 4-(-6) & 6-11 \\
+15-(-23) & -12-51 & 3-35
+\end{pmatrix}
+=
+\begin{pmatrix}
+-4 & 10 & -5 \\
+38 & -63 & -32
+\end{pmatrix}
+\]
+
+\bigskip
+
+\[
+A = \begin{pmatrix}
+-4 & 71 & 22 \\
+9 & 17 & -19
+\end{pmatrix},
+\quad
+B = \begin{pmatrix}
+52 & 12 & -5 \\
+0 & 100 & -24
+\end{pmatrix}
+\]
+
+\[
+A + B = 
+\begin{pmatrix}
+-4+52 & 71+12 & 22+(-5) \\
+9+0 & 17+100 & -19+(-24)
+\end{pmatrix}
+=
+\begin{pmatrix}
+48 & 83 & 17 \\
+9 & 117 & -43
+\end{pmatrix}
+\]
+
+\[
+A - B = 
+\begin{pmatrix}
+-4-52 & 71-12 & 22-(-5) \\
+9-0 & 17-100 & -19-(-24)
+\end{pmatrix}
+=
+\begin{pmatrix}
+-56 & 59 & 27 \\
+9 & -83 & 5
+\end{pmatrix}
+\]
+
+\section*{Задание: Найти скалярное произведение векторов.}
+
+Скалярное произведение векторов по координатам вычисляется как сумма произведений соответствующих координат.
+
+\begin{enumerate}
+    \item \(\vec{a} = (-3, -1), \quad \vec{b} = (4, -2)\)
+
+    \[
+    \vec{a} \cdot \vec{b} = (-3)\cdot 4 + (-1)\cdot(-2) = -12 + 2 = -10
+    \]
+
+    \item \(\vec{m} = (-1, 1), \quad \vec{n} = (1, -1)\)
+
+    \[
+    \vec{m} \cdot \vec{n} = (-1)\cdot 1 + 1\cdot(-1) = -1 - 1 = -2
+    \]
+
+    \item \(\vec{u} = (-\sqrt{3}, \sqrt{2})\), \quad точки \(K(0, 0)\), \(L(\sqrt{3}, -\sqrt{2})\)
+
+    Найдём вектор \(\overrightarrow{KL} = (\sqrt{3} - 0,\ -\sqrt{2} - 0) = (\sqrt{3}, -\sqrt{2})\).
+
+    \[
+    \vec{u} \cdot \overrightarrow{KL} = (-\sqrt{3})\cdot \sqrt{3} + \sqrt{2} \cdot (-\sqrt{2}) = -3 - 2 = -5
+    \]
+
+    \item \(\vec{v} = (-2, 10)\), \quad точки \(X(1, -2)\), \(Z(7, -7)\)
+
+    Найдём вектор \(\overrightarrow{XZ} = (7 - 1,\ -7 - (-2)) = (6, -5)\).
+
+    \[
+    \vec{v} \cdot \overrightarrow{XZ} = (-2)\cdot 6 + 10\cdot(-5) = -12 - 50 = -62
+    \]
+\end{enumerate}
+
+\end{document}
