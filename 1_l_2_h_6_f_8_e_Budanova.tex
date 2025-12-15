@@ -1,0 +1,151 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\geometry{a4paper, margin=1in}
+
+\title{Коллоквиум 1: работа над ошибками}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Задание 1l}
+Найти сумму $A + B$ и разность $A - B$ для матриц $A$ и $B$:
+
+\[
+A = \begin{pmatrix}
+43 & -62 & 76 \\
+54 & -10 & 57 \\
+90 & -9 & 7
+\end{pmatrix}, \quad 
+B = \begin{pmatrix}
+31 & -7 & -2 \\
+-6 & 83 & 2 \\
+-28 & 49 & 99
+\end{pmatrix}
+\]
+
+\[
+A + B = 
+\begin{pmatrix}
+43 + 31 & -62 - 7 & 76 - 2 \\
+54 - 6 & -10 + 83 & 57 + 2 \\
+90 - 28 & -9 + 49 & 7 + 99
+\end{pmatrix} = 
+\begin{pmatrix}
+74 & -69 & 74 \\
+48 & 73 & 59 \\
+62 & 40 & 106
+\end{pmatrix}
+\]
+
+\[
+A - B = 
+\begin{pmatrix}
+43 - 31 & -62 + 7 & 76 + 2 \\
+54 + 6 & -10 - 83 & 57 - 2 \\
+90 + 28 & -9 - 49 & 7 - 99
+\end{pmatrix} = 
+\begin{pmatrix}
+12 & -55 & 78 \\
+60 & -93 & 55 \\
+118 & -58 & -92
+\end{pmatrix}
+\]
+
+\section*{Задание 2h}
+Найти произведение $A \cdot B$ и $B \cdot A$ для матриц $A$ и $B$:
+
+\[
+A = \begin{pmatrix}
+1 & 5 \\
+-1 & 2 \\
+0 & -3
+\end{pmatrix}, \quad 
+B = \begin{pmatrix}
+-1 & -4 & -1 \\
+1 & -2 & 0
+\end{pmatrix}
+\]
+
+\[
+A \cdot B = 
+\begin{pmatrix}
+1 & 5 \\
+-1 & 2 \\
+0 & -3
+\end{pmatrix} \cdot
+\begin{pmatrix}
+-1 & -4 & -1 \\
+1 & -2 & 0
+\end{pmatrix} = 
+\begin{pmatrix}
+-1 + 5 & -4 - 10 & -1 + 0 \\
+1 + 2 & 4 - 4 & 1 + 0 \\
+0 - 3 & 0 + 6 & 0 + 0
+\end{pmatrix} = 
+\begin{pmatrix}
+4 & -14 & -1 \\
+3 & 0 & 1 \\
+-3 & 6 & 0
+\end{pmatrix}
+\]
+
+\[
+B \cdot A = 
+\begin{pmatrix}
+-1 & -4 & -1 \\
+1 & -2 & 0
+\end{pmatrix} \cdot
+\begin{pmatrix}
+1 & 5 \\
+-1 & 2 \\
+0 & -3
+\end{pmatrix} = 
+\begin{pmatrix}
+-1 + 4 + 0 & -5 - 8 + 3 \\
+1 + 2 + 0 & 5 - 4 + 0
+\end{pmatrix} = 
+\begin{pmatrix}
+3 & -10 \\
+3 & 1
+\end{pmatrix}
+\]
+
+\section*{Задание 6f}
+Найти скалярное произведение векторов:
+
+\[
+\vec{v} = (-2; 10), \quad X[1; -2], \quad Z[7; -7]
+\]
+
+\[
+\vec{XZ} = (7-1, -7-(-2)) = (6, -5)
+\]
+
+\[
+\vec{v} \cdot \vec{XZ} = (-2) \cdot 6 + 10 \cdot (-5) = -12 - 50 = -62
+\]
+
+\section*{Задание 8e}
+Выяснить, являются ли данные векторы перпендикулярными:
+
+\[
+\vec{m} = \left( -\frac{3}{4}; -1 \right), \quad \vec{n} = (4; 2)
+\]
+
+\[
+\vec{m} \cdot \vec{n} = \left( -\frac{3}{4} \right) \cdot 4 + (-1) \cdot 2 = -3 - 2 = -5
+\]
+
+\[
+\vec{m} \cdot \vec{n} \neq 0 \quad \Rightarrow \quad \vec{m} \text{ не перпендикулярен } \vec{n}
+\]
+
+\end{document}
