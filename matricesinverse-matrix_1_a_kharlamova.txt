@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{matricesinverse-matrix_1_a_kharlamova}
+\author{VK}
+\date{December 2025}
+
+```latex
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+\title{Нахождение обратной матрицы методом Гаусса-Жордана}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Задача}
+Найти обратную матрицу методом Гаусса-Жордана для матрицы:
+\[
+A = \begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix}
+\]
+
+\section*{Решение}
+
+\subsection*{Шаг 1: Составляем расширенную матрицу}
+Приписываем к матрице \(A\) единичную матрицу того же порядка:
+\[
+\left(
+\begin{array}{cc|cc}
+1 & 1 & 1 & 0 \\
+1 & -1 & 0 & 1
+\end{array}
+\right)
+\]
+
+\subsection*{Шаг 2: Приведение матрицы к единичному виду}
+\textbf{Преобразование 1:} Из второй строки вычитаем первую строку (\(R_2 = R_2 - R_1\)):
+\[
+\left(
+\begin{array}{cc|cc}
+1 & 1 & 1 & 0 \\
+0 & -2 & -1 & 1
+\end{array}
+\right)
+\]
+
+\textbf{Преобразование 2:} Делим вторую строку на \(-2\) (\(R_2 = -\frac{1}{2}R_2\)):
+\[
+\left(
+\begin{array}{cc|cc}
+1 & 1 & 1 & 0 \\
+0 & 1 & 0.5 & -0.5
+\end{array}
+\right)
+\]
+
+\textbf{Преобразование 3:} Из первой строки вычитаем вторую строку (\(R_1 = R_1 - R_2\)):
+\[
+\left(
+\begin{array}{cc|cc}
+1 & 0 & 0.5 & 0.5 \\
+0 & 1 & 0.5 & -0.5
+\end{array}
+\right)
+\]
+
+\subsection*{Шаг 3: Проверка}
+Слева получили единичную матрицу, значит справа — обратная матрица:
+\[
+A^{-1} = \begin{pmatrix}
+0.5 & 0.5 \\
+0.5 & -0.5
+\end{pmatrix}
+\]
+
+\subsection*{Ответ}
+\[
+\boxed{A^{-1} = \begin{pmatrix}
+0.5 & 0.5 \\
+0.5 & -0.5
+\end{pmatrix} = \frac{1}{2}\begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix}}
+\]
+
+\end{document}
+```
