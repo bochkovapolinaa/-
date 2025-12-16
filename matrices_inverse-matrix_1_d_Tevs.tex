@@ -1,0 +1,52 @@
+
+
+\documentclass[12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1.5cm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+\section*{Задача}
+Вычислить:
+\[
+\begin{pmatrix}-3 & 7 & 6 \\-5 & 0 & -2 \end{pmatrix} \pm \begin{pmatrix}12 & 4 & 3\\-2 & -3 & 1 \end{pmatrix}
+\]
+
+
+\subsection*{Решение}
+Поскольку в выражении указан знак \(\pm\), вычислим оба варианта.
+
+Над данными матрицами можно проводить действия сложения и вычитания, т.к они одинакового размера (у них равное количество строк и столбцов).
+Складываем по принципу: a11 одной матрицы с a11 другой матрицы. Вычитание проводится аналогично.
+
+1. \textbf{Сложение}:
+\[
+\begin{pmatrix}-3 & 7 & 6 \\-5 & 0 & -2 \end{pmatrix} + \begin{pmatrix}12 & 4 & 3\\-2 & -3 & 1 \end{pmatrix} = 
+\begin{pmatrix} -3+12 & 7+4 & 6+3 \\ -5+(-2) & 0+(-3) & -2+1 \end{pmatrix} = 
+\begin{pmatrix} 9 & 11 & 9 \\ -7 & -3 & -1 \end{pmatrix}
+\]
+
+2. \textbf{Вычитание}:
+\[
+\begin{pmatrix}-3 & 7 & 6 \\-5 & 0 & -2 \end{pmatrix} - \begin{pmatrix}12 & 4 & 3\\-2 & -3 & 1 \end{pmatrix} = 
+\begin{pmatrix} -3-12 & 7-4 & 6-3 \\ -5-(-2) & 0-(-3) & -2-1 \end{pmatrix} = 
+\begin{pmatrix} -15 & 3 & 3 \\ -3 & 3 & -3 \end{pmatrix}
+\]
+
+\subsection*{Ответ:}
+\[
+\begin{pmatrix}-3 & 7 & 6 \\-5 & 0 & -2 \end{pmatrix} + \begin{pmatrix}12 & 4 & 3\\-2 & -3 & 1 \end{pmatrix} = \begin{pmatrix} 9 & 11 & 9 \\ -7 & -3 & -1 \end{pmatrix}
+\]
+\[
+\begin{pmatrix}-3 & 7 & 6 \\-5 & 0 & -2 \end{pmatrix} - \begin{pmatrix}12 & 4 & 3\\-2 & -3 & 1 \end{pmatrix} = \begin{pmatrix} -15 & 3 & 3 \\ -3 & 3 & -3 \end{pmatrix}
+\]
+
+\end{document}

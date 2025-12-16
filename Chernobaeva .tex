@@ -1,0 +1,209 @@
+\documentclass[12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1.5cm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+
+\begin{document}
+
+
+\section*{Задача}
+
+Найти \(A \cdot B\) и \(B \cdot A\):
+\[
+A = \begin{pmatrix}
+3 & 4 & 1 \\
+0 & -2 & 3 \\
+2 & 1 & -1
+\end{pmatrix},
+\qquad
+B = \begin{pmatrix}
+1 & -2 & 1 \\
+0 & 3 & 8 \\
+4 & 1 & -2
+\end{pmatrix}
+\]
+
+\subsection*{ Решение}
+
+\subsection*{ \(A \cdot B\)}
+
+Каждый элемент матрицы-произведения получается как сумма произведений элементов строки первой матрицы на соответствующие элементы столбца второй матрицы.
+
+\[
+\begin{pmatrix}
+3 & 4 & 1 \\
+0 & -2 & 3 \\
+2 & 1 & -1
+\end{pmatrix}
+\begin{pmatrix}
+1 & -2 & 1 \\
+0 & 3 & 8 \\
+4 & 1 & -2
+\end{pmatrix}
+=
+\]
+
+\[
+=
+\begin{pmatrix}
+3\cdot1 + 4\cdot0 + 1\cdot4 & 3\cdot(-2) + 4\cdot3 + 1\cdot1 & 3\cdot1 + 4\cdot8 + 1\cdot(-2) \\
+0\cdot1 + (-2)\cdot0 + 3\cdot4 & 0\cdot(-2) + (-2)\cdot3 + 3\cdot1 & 0\cdot1 + (-2)\cdot8 + 3\cdot(-2) \\
+2\cdot1 + 1\cdot0 + (-1)\cdot4 & 2\cdot(-2) + 1\cdot3 + (-1)\cdot1 & 2\cdot1 + 1\cdot8 + (-1)\cdot(-2)
+\end{pmatrix}
+=
+\]
+
+\[
+=
+\begin{pmatrix}
+7 & 7 & 33 \\
+12 & -3 & -22 \\
+-2 & -2 & 12
+\end{pmatrix}
+\]
+
+
+\subsection*{ \(B \cdot A\)}
+
+Каждый элемент матрицы-произведения получается как сумма произведений элементов строки первой матрицы на соответствующие элементы столбца второй матрицы.
+
+\[
+\begin{pmatrix}
+1 & -2 & 1 \\
+0 & 3 & 8 \\
+4 & 1 & -2
+\end{pmatrix}
+\begin{pmatrix}
+3 & 4 & 1 \\
+0 & -2 & 3 \\
+2 & 1 & -1
+\end{pmatrix}
+=
+\]
+
+\[
+=
+\begin{pmatrix}
+1\cdot3 + (-2)\cdot0 + 1\cdot2 & 1\cdot4 + (-2)\cdot(-2) + 1\cdot1 & 1\cdot1 + (-2)\cdot3 + 1\cdot(-1) \\
+0\cdot3 + 3\cdot0 + 8\cdot2 & 0\cdot4 + 3\cdot(-2) + 8\cdot1 & 0\cdot1 + 3\cdot3 + 8\cdot(-1) \\
+4\cdot3 + 1\cdot0 + (-2)\cdot2 & 4\cdot4 + 1\cdot(-2) + (-2)\cdot1 & 4\cdot1 + 1\cdot3 + (-2)\cdot(-1)
+\end{pmatrix}
+=
+\]
+
+\[
+=
+\begin{pmatrix}
+5 & 9 & -6 \\
+16 & 2 & 1 \\
+8 & 12 & 9
+\end{pmatrix}
+\]
+\subsection*{Ответ}
+\[
+A \cdot B = \begin{pmatrix}
+7 & 7 & 33 \\
+12 & -3 & -22 \\
+-2 & -2 & 12
+\end{pmatrix},
+\qquad
+B \cdot A = \begin{pmatrix}
+5 & 9 & -6 \\
+16 & 2 & 1 \\
+8 & 12 & 9
+\end{pmatrix}
+\]
+
+\section*{Задача }
+Найти частное
+\[
+\frac{7 - 2i}{-3 + 2i}
+\]
+
+\subsection*{Решение}
+
+Для деления комплексных чисел умножим числитель и знаменатель на сопряжённое знаменателя:
+
+\[
+\frac{7 - 2i}{-3 + 2i} = \frac{(7 - 2i)(-3 - 2i)}{(-3 + 2i)(-3 - 2i)} =  \frac{-25 - 8i}{13} = -\frac{25}{13} - \frac{8}{13}i
+\]
+
+\subsection*{Ответ}
+\[
+-\frac{25}{13} - \frac{8}{13}i
+\]
+
+\section*{Задача}
+Возвести в степень
+\[
+(-3 + 3i)^4\
+\]
+\subsection*{Решение}
+
+Найдём модуль комплексного числа:
+\[
+|z| = \sqrt{(-3)^2 + 3^2} = \sqrt{18} = 3\sqrt{2}
+\]
+
+Найдем аргумент с помощью косинуса и синуса:
+\[
+\cos\varphi = \frac{-3}{3\sqrt{2}} = -\frac{1}{\sqrt{2}}, \quad \sin\varphi = \frac{3}{3\sqrt{2}} = \frac{1}{\sqrt{2}}
+\]
+Так как точка находится во второй четверти, то \(\varphi = \frac{3\pi}{4}\).
+
+Тригонометрическая форма:
+\[
+z = 3\sqrt{2}\left(\cos\frac{3\pi}{4} + i\sin\frac{3\pi}{4}\right)
+\]
+По формуле Муавра:
+\[
+z^4 = (3\sqrt{2})^4\left(\cos\left(4\cdot\frac{3\pi}{4}\right) + i\sin\left(4\cdot\frac{3\pi}{4}\right)\right)
+\]\
+\[
+z^4 = 324(-1 + 0i) = -324
+\]
+\subsection*{Ответ }
+\[
+(-3 + 3i)^4 = -324
+\]
+
+\section*{Задача}
+Найти угол между векторами \(g\) и \(h\)
+\[
+g = (9; -5), \qquad h = (-0.8; 2)
+\]
+\subsection*{Решение}
+Скалярное произведение векторов:
+\[
+g \cdot h = 9 \cdot (-0.8) + (-5) \cdot 2 = -17.2
+\]
+
+Длина вектора \(g\):
+\[
+|g| = \sqrt{9^2 + (-5)^2} = \sqrt{106}
+\]
+
+Длина вектора \(h\):
+\[
+|h| = \sqrt{(-0.8)^2 + 2^2} = \sqrt{4.64} = \frac{2\sqrt{29}}{5}
+\]
+
+Косинус угла между векторами:
+\[
+\cos\theta = \frac{g \cdot h}{|g| \cdot |h|} = \frac{-17.2}{\sqrt{106} \cdot \frac{2\sqrt{29}}{5}} = \frac{-43}{\sqrt{3074}}
+\]
+
+\subsection*{Ответ}
+\[
+\theta = \arccos\left(\frac{-43}{\sqrt{3074}}\right)
+\]
+
+\end{document}

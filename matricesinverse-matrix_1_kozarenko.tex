@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1.5cm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+% ========== НАЧАЛО ЗАДАЧИ ==========
+\section*{Задача}
+Найти обратную матрицу \( A^{-1} \) к матрице \( A \):
+
+а) 
+\[
+A = \begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix}
+\]
+
+\subsection*{Решение}
+Для матрицы \( A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \) обратная матрица вычисляется по формуле:
+\[
+A^{-1} = \frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix},
+\]
+при условии, что определитель \( \det A = ad - bc \neq 0 \).
+
+В нашем случае \( a = 1 \), \( b = 1 \), \( c = 1 \), \( d = -1 \).
+
+1. Вычислим определитель:
+\[
+\det A = a d - b c = 1 \cdot (-1) - 1 \cdot 1 = -1 - 1 = -2.
+\]
+
+2. Так как определитель не равен нулю, обратная матрица существует. Подставим значения в формулу:
+\[
+A^{-1} = \frac{1}{-2} \begin{pmatrix} -1 & -1 \\ -1 & 1 \end{pmatrix}
+= \begin{pmatrix} \frac{-1}{-2} & \frac{-1}{-2} \\ \frac{-1}{-2} & \frac{1}{-2} \end{pmatrix}
+= \begin{pmatrix} \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} \end{pmatrix}.
+\]
+
+\subsection*{Проверка} (для уверенности):
+\[
+A \cdot A^{-1} = 
+\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \cdot 
+\begin{pmatrix} \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} \end{pmatrix} = 
+\begin{pmatrix} 
+1\cdot\frac{1}{2}+1\cdot\frac{1}{2} & 1\cdot\frac{1}{2}+1\cdot\left(-\frac{1}{2}\right) \\ 
+1\cdot\frac{1}{2}+(-1)\cdot\frac{1}{2} & 1\cdot\frac{1}{2}+(-1)\cdot\left(-\frac{1}{2}\right) 
+\end{pmatrix} = 
+\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}.
+\]
+
+\subsection*{Ответ:}
+\[
+A^{-1} = \begin{pmatrix} \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} \end{pmatrix}.
+\]
+
+\end{document}
