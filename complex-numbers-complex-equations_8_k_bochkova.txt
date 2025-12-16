@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1.5cm}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\begin{document}
+
+\section*{Решение уравнения}
+\[
+x^2 - (3 + 2i)x + 5 + i = 0
+\]
+
+\subsection*{1. По формуле квадратного уравнения}
+\[
+a = 1,\quad b = -(3 + 2i),\quad c = 5 + i
+\]
+\[
+D = b^2 - 4ac = [-(3 + 2i)]^2 - 4 \cdot 1 \cdot (5 + i)
+\]
+\[
+(3 + 2i)^2 = 9 + 12i + 4i^2 = 9 + 12i - 4 = 5 + 12i
+\]
+\[
+4ac = 20 + 4i
+\]
+\[
+D = (5 + 12i) - (20 + 4i) = -15 + 8i
+\]
+
+\subsection*{2. Извлечение квадратного корня из $D$}
+Пусть $\sqrt{-15 + 8i} = p + qi$, где $p,q \in \mathbb{R}$. Тогда:
+\[
+(p + qi)^2 = p^2 - q^2 + 2pqi = -15 + 8i
+\]
+\[
+\begin{cases}
+p^2 - q^2 = -15 \\
+2pq = 8 \;\Rightarrow\; pq = 4
+\end{cases}
+\]
+Из $pq = 4$: $q = \dfrac{4}{p}$. Подставляем:
+\[
+p^2 - \frac{16}{p^2} = -15
+\]
+\[
+p^4 + 15p^2 - 16 = 0
+\]
+Замена $t = p^2 \ge 0$:
+\[
+t^2 + 15t - 16 = 0
+\]
+\[
+t = \frac{-15 \pm \sqrt{225 + 64}}{2} = \frac{-15 \pm 17}{2}
+\]
+\[
+t = 1 \quad (\text{так как } t \ge 0)
+\]
+\[
+p^2 = 1 \;\Rightarrow\; p = \pm 1
+\]
+\begin{itemize}
+    \item При $p = 1$: $q = 4$ $\Rightarrow$ $1 + 4i$
+    \item При $p = -1$: $q = -4$ $\Rightarrow$ $-1 - 4i$
+\end{itemize}
+\[
+\sqrt{D} = \sqrt{-15 + 8i} = \pm(1 + 4i)
+\]
+
+\subsection*{3. Нахождение корней уравнения}
+\[
+x = \frac{-b \pm \sqrt{D}}{2a} = \frac{3 + 2i \pm (1 + 4i)}{2}
+\]
+
+\noindent \textbf{Первый корень:}
+\[
+x_1 = \frac{3 + 2i + 1 + 4i}{2} = \frac{4 + 6i}{2} = 2 + 3i
+\]
+
+\noindent \textbf{Второй корень:}
+\[
+x_2 = \frac{3 + 2i - 1 - 4i}{2} = \frac{2 - 2i}{2} = 1 - i
+\]
+
+\subsection*{Ответ:}
+\[
+\boxed{x_1 = 2 + 3i,\quad x_2 = 1 - i}
+\]
+
+\end{document}
